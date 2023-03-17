@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - The main function serves as the starting point for program execution
+ * main - this is the main function
  *
  * Return: 0 when successful
  * */
