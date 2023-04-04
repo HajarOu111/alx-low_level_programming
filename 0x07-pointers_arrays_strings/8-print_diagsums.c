@@ -9,17 +9,14 @@
 
 void print_diagsums(int *a, int size)
 {
-int c;
-int sum1 = 0;
-int sum2 = 0;
-for (c = 0; c < size; c++)
+int i;
+int sum, sum1;
+sum = 0;
+sum1 = 0;
+for (i = 0; i < size; i++)
 {
-sum1 = sum1 + a[c * size + c];
+sum += a[(size * i) + i];
+sum1 += a[(size * (i + 1)) - (i + 1)];
 }
-for (c = size - 1; c >= 0; c--)
-{
-sum2 = sum2 + a[c * size + (size - c - 1)];
+printf("%d, %d\n", sum, sum1);
 }
-printf("%d,%d\n", sum1, sum2);
-}
-
