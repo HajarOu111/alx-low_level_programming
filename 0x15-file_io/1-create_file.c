@@ -18,11 +18,9 @@ return (-1);
 if (text_content == NULL)
 text_content = "";
 for (nl = 0; text_content[nl]; nl++)
-{
 rwr = write(fd, text_content, nl);
 if (rwr == -1)
 return (-1);
 close(fd);
-}
 return (1);
 }
