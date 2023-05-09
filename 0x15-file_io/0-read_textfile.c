@@ -25,9 +25,7 @@ n = read(fd, buf, letters);
 if (n == -1)
 return (0);
 w = write(STDOUT_FILENO, buf, n);
-if (w == -1 || w != n)
-{
-return (0);
-}
-return (n);
+close(fd);
+free(buf);
+return (w);
 }
