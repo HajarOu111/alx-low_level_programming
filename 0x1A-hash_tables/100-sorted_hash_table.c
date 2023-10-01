@@ -14,7 +14,7 @@ if (sht == NULL)
 return (NULL);
 sht->size = size;
 sht->shead = NULL;
-sht ->stail = NULL;
+sht->stail = NULL;
 sht->array = malloc(sizeof(shash_node_t *) * size);
 if (sht->array == NULL)
 {
